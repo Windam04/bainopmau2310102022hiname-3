@@ -33,6 +33,18 @@ hi('1', '22', '333', '4444') | Hi 1, 22, 333 and 4444!
 #endregion debai
 
 #region bailam
-def hi(name):
-  return 'todo'
+def hi(name=None):
+  """Xuất ra câu chào theo tên đã cho.
+
+  Args:
+    name: Tên người được chào.
+
+  Returns:
+    Câu chào.
+  """
+
+  if name is None:
+    return "Hi!"
+  else:
+    return f"Hi {name}!"
 #endregion bailam
